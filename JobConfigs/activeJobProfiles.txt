@@ -10,4 +10,27 @@ Need a job profile per application(microservice).
 ###################################################################
 Job Profile				Job Name
 ###################################################################
-InvValidDestination			InvValidDestinationStgDBToFlatFileJob			
+InvValidDestination			InvValidDestinationStgDBToFlatFileJob
+StoreMaster					StoreMasterStgDBToStoreMasterFileJob	
+AsnIn						AsnInStagingDBToQueueJob		
+Customer					customerStgDBToXMLJob
+Deal 						dealStgDbToFileJob
+DeliverySlot				DeliverySlotStagingDBToQueueJob
+Employee					employeeStgDBToEmployeeFileJob
+ExchangeRate				exchangeRateStgDBToFileJob
+InventoryCount				inventoryCountStgDBToMntFileJob
+InventoryDocument			inventoryDocumentStgDBToMntFileJob
+InventoryLocation			inventoryLocationStgDBToMntFileJob
+ItemMaster					itemMasterStgDBToItemMasterFileJob
+MerchHier					mercHierStgDBToFileJob
+OrgHier						orgHierStgDbToFileJob
+Pricing 					pricingStgDBToFlatFileJob
+QueueToStgDB				queueToStgDBJob
+RcvUnitAdj					RcvUnitAdjStagingDBToQueueJob
+ReturnToVendor				returnToVendorStgDBToQueueJob
+StockOrder					SOStagingDBToQueueJob
+StockLedger					stockLedgerStgDBToMntFileJob 
+Tax							taxStgDbToFileJob
+Vendor						vendorStgDBToMntFileJob
+WebTransaaction				webTransactionStgDbToFileJob
+FileDistribution 			fileDistributionJob
