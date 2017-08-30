@@ -1,6 +1,6 @@
 Spring Profiles configured for Job related application properties to use are as below.
 Argument to be used while deploying applications is (provide the job profile as below) 
---spring.profiles.active=default,InvValidDestination (OR) - local
+--spring.profiles.active=default,StoreMaster (OR) - local
 --spring.profiles.active=dev,InvValidDestination (OR) - kubernetes or dev machine
  
 etc.
@@ -32,5 +32,9 @@ StockOrder					SOStagingDBToQueueJob
 StockLedger					stockLedgerStgDBToMntFileJob 
 Tax							taxStgDbToFileJob
 Vendor						vendorStgDBToMntFileJob
-WebTransaaction				webTransactionStgDbToFileJob
+WebTransaction				webTransactionStgDbToFileJob
 FileDistribution 			fileDistributionJob
+NotifyIncompleteJob			notifyIncompleteJobsJob
+Purging						purgingJob
+PurchaseOrder				POStagingDBToQueueJob
+InventoryRepOrder 			inventoryReplinishmentOrderStgDBToMntFileJob
